@@ -1,0 +1,161 @@
+
+
+#signal{
+    width: 100%;
+    height: 32px;
+    /*背景黑色*/
+    background-color: black;
+    /*字体相关*/
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+
+    /*内部元素行为：*/
+    display: flex;
+    /*横向排列 默认的*/
+    /*flex-direction: row;*/
+    /*与交叉轴两端对齐，轴线之间的间隔平均分布。*/
+    justify-content: space-between;
+}
+/*设置信号，运营商 4g 之间的间距*/
+#signal-left div{
+    margin-left: 4px;
+}
+
+/*左边的*/
+#signal-left{
+    height: 32px;
+    /*与 signal-right一致都是1，平分剩余空间*/
+    flex-grow: 1;
+    /*为了计算剩余空间时，让左右两边的元素占的一样多，所以设置分配多余空间之前,初始元素大小为0*/
+    flex-basis:  0px;
+
+    /*内部元素行为：*/
+    display: flex;
+    /*信号，运营商 4g 从左向右排列*/
+    justify-content: flex-start;
+    /*信号，运营商 4g 垂直居中*/
+    align-items: center;
+}
+
+/*中间的*/
+#signal-center{
+    height: 32px;
+    width: 45px;
+}
+/*右边的*/
+#signal-right{
+    height: 32px;
+    /*与 signal-left一致都是1，平分剩余空间*/
+    flex-grow: 1;
+    /*为了计算剩余空间时，让左右两边的元素占的一样多，所以设置分配多余空间之前,初始元素大小为0*/
+    flex-basis:  0px;
+
+    /*内部元素行为：*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*设置信号，运营商 4g 之间的间距*/
+#signal-right div{
+    /*margin-right: 4px;*/
+}
+
+/*---------signal start------*/
+/*信号*/
+#signal-area{
+    height: 16px;
+    width: 30px;
+    display: flex;
+    /*四个小格子不靠顶端，而是靠下部*/
+    align-items: flex-end;
+}
+
+/*四个信号格子*/
+#signal-area div{
+    width: 4px;
+    margin-left: 3px;
+    border-radius: 1px;
+}
+/*信号高度*/
+#signal-area div:nth-child(1){
+    height: 5px;
+}
+#signal-area div:nth-child(2){
+    height: 8px;
+}
+#signal-area div:nth-child(3){
+    height: 12px;
+}
+#signal-area div:nth-child(4){
+    height: 15px;
+}
+/*有信号*/
+.signal-ok{
+    background-color: white;
+}
+/*没信号*/
+.signal-loss{
+    background-color: gray;
+}
+
+/*---------signal end------*/
+/*---------battery start------*/
+#battery{
+    width: 40px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    /*flex-flow: row wrap;*/
+}
+
+#battery-body{
+    width: 32px;
+    height: 12px;
+    border: whitesmoke 1px solid;
+    border-radius: 1px;
+}
+#battery-core{
+    height: 10px;
+    width: 26px;
+    background-color: limegreen;
+    margin: 1px;
+}
+#battery-head{
+    width: 2px;
+    height: 6px;
+    background-color: whitesmoke;
+    border-radius: 0px 1px 1px 0px ;
+}
+@keyframes charge {
+    1%{
+        width: 1px;
+        background-color:crimson ;
+    }
+    20%{
+        width: 6px;
+        background-color:crimson ;
+    }
+    21%{
+        width: 6px;
+        background-color:yellow ;
+    }
+    79%{
+        width: 24px;
+        background-color:yellow ;
+    }
+    80%{
+        width: 24px;
+        background-color:limegreen ;
+    }
+    100%{
+        width: 30px;
+        background-color:limegreen ;
+    }
+}
+.charge{
+    animation-name: charge;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}

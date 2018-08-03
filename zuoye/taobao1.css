@@ -1,0 +1,357 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#divbody{
+    /*background-color: antiquewhite;*/
+    /*min-height: 600px;*/
+}
+.c_tb_color{
+    color: rgb(242, 46, 0);
+}
+.c_color_gray {
+    color: #747474;
+}
+/*--------------------上*/
+#nav{
+    background-color: rgb(245,245,245);
+    height: 35px;
+    font-size: 12px;
+}
+#nav a{
+    text-decoration: none;
+}
+/*--------------------上左边*/
+#nav_left{
+    float:left;
+    margin: 0px;
+}
+#nav_left li{
+    float: left;
+    list-style:none;
+}
+#nav_left li a{
+    display: inline-block;
+    line-height: 35px;
+    color:rgb(108, 108, 108);
+}
+#nav_left li #login{
+    color: rgb(242, 46, 0);
+    margin-right: 7px;
+}
+#nav_left li #sign{
+    margin-right: 13px;
+}
+#sign:hover,#appdownload:hover{
+    color: rgb(242, 46, 0);
+}
+#span1{
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    line-height: 6px;
+    margin-top: 16px;
+    overflow: hidden;
+
+}
+#span2{
+    margin-right: 5px;
+    color: rgb(156, 156, 156);
+    line-height: 6px;
+    font-size: 12px;
+}
+/*--------------------上右*/
+
+#nav_right{
+    float:right;
+    margin: 0px;
+}
+
+#nav_right li{
+    float: left;
+    list-style:none;
+    padding: 0px 6px;
+}
+#nav_right li a{
+    display: inline-block;
+    float: left;
+    line-height: 35px;
+    color:rgb(108, 108, 108);
+    height: 100%;
+    margin-right: 7px;
+}
+#nav_right li #a_homepage{
+    color: rgb(242, 46, 0);
+}
+
+/*我的淘宝右边的箭头*/
+.span_out{
+    float: left;
+    display: inline-block;
+    height: 35px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.span_in{
+    display: inline-block;
+    height: 100%;
+    line-height: 30px;
+}
+
+/*购物车*/
+
+.img_cart{
+    margin-top: 3px;
+    float: left;
+    display: inline-block;
+    height: 20px;
+}
+.span_cart{
+    float: left;
+    display: inline-block;
+    height: 100%;
+    margin-right: 5px;
+}
+.c_orange{
+    color: rgb(242, 46, 0);
+}
+#img_collect{
+    margin-top: 2px;
+    float: left;
+    display: inline-block;
+    height: 20px;
+}
+.nav_pipe{
+    color:rgb(108, 108, 108);
+    line-height: 35px;
+}
+
+/*-------------------------------search-------------------------------*/
+.search_div{
+    height: 107px;
+    /*margin: 0px 42px;*/
+    /*border: 1px solid green;*/
+    /*background-color: aquamarine;*/
+    width: 100%;
+    position: absolute;
+    /*box-sizing: border-box;*/
+}
+
+.search_logo{
+    display: inline-block;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    width: 213px;
+    height: 57px;
+    box-sizing: border-box;
+    margin-top: 18px;
+    margin-left: 42px;
+    position: absolute;
+    top:0px
+}
+.search_right{
+    /*background-color: yellow;*/
+    display: inline-block;
+    /*border: 1px solid red;*/
+    height: 100%;
+    /*margin-left: 213px;*/
+    /*box-sizing: border-box;*/
+    position: absolute;
+    left: 255px;
+    /*margin-top: 20px;*/
+    /*margin-left: 20px;*/
+
+}
+.c_ul_search_keyword{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border: none;
+    margin-left: 20px;
+}
+.c_ul_search_keyword li{
+    list-style: none;
+    float: left;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.search_text{
+    width: 750px;
+    height:39px;
+    /*background-color: aquamarine;*/
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px  rgb(255,80,5) solid;
+}
+
+#search_text_input{
+    float: left;
+    height: 35px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0px;
+
+    border: none;
+    width: 87%;
+    /*padding: 0px;*/
+    /*width: 614px;*/
+    /*border: rgb(255,80,5) solid 2px;*/
+    /*margin-top: 26px;*/
+     /*text-indent: 5px;*/
+ }
+
+#search_btn_input{
+    float: left;
+    height: 39px;
+    width: 13%;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+
+    /*margin-top: 26px;*/
+    /*height: 45px;*/
+    /*padding: 0px;*/
+    /*width: 94px ;*/
+    /*background-color:  rgb(255,80,5);*/
+    /*border :2px solid  rgb(255,80,5) ;*/
+    background: url(//img.alicdn.com/tps/i3/T1_X0WFBdbXXcV0OPs-95-45.png);
+    background-size: cover;
+}
+
+.search_keyword{
+    height: 32px;
+}
+/*-------------------------------searchremind-------------------------------*/
+#search_remind{
+    margin-top: 107px;
+    height: 44px;
+    background-color: rgb(245,245,245);
+    width: 100%;
+    position: absolute;
+}
+
+#i_u_search_remind{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border: none;
+    margin-left: 42px;
+    color: black;
+    /*margin-left: 20px;*/
+}
+
+
+#i_u_search_remind li{
+    list-style: none;
+    float: left;
+    font-size: 12px;
+    padding-right: 10px;
+    line-height: 44px;
+}
+#i_u_search_remind li:hover{
+    color: rgb(242, 46, 0);
+}
+
+
+/*-------------------------------ture content-------------------------------*/
+#content{
+    /*height: 44px;*/
+    margin-top: 151px;
+    min-height: 200px;
+    position: absolute;
+    /*background-color: aquamarine;*/
+    width: 100%;
+    position: absolute;
+}
+.dctr{
+    /*background-color: yellow;*/
+    margin-left: 42px;
+    margin-right: 42px;
+    padding-top: 22px;
+}
+/*111111111111*/
+
+.jianjie{
+    width: 200px;
+    height: 300px;
+    /*background-color: gainsboro;*/
+    border: 1px gainsboro solid;
+    padding: 1px;
+    /*float: left;*/
+    display: inline-block;
+}
+.tupian{
+    width: 100%;
+    height: 200px;
+    background-image: url("red dress.jpg");
+    background-size: cover;
+
+}
+.lianjie{
+    background-color: white;
+}
+.jiage{
+    color: rgb(255,68,0);
+    text-decoration: none;
+}
+.jiage:hover{
+    text-decoration: underline;
+}
+.baoyou{
+    background-color:rgb(255,68,0) ;
+    text-decoration: none;
+    color: white;
+}
+.changjieshao{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.changjieshao:hover{
+    text-decoration: underline;
+}
+.mjmc{
+    color: rgb(136,136,136);
+    display: block;
+    text-decoration: underline;
+    float: left;
+    text-align: left;
+    width: 130px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.fukuan{
+    color: rgb(136,136,136);
+    display: block;
+    float: right;
+    text-align: right;
+    width: 70px;
+}
+.mf{
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+}
+.btn1{
+    background-color: rgb(255,288,208);
+    color: rgb(229,81,29);
+    border:1px solid  rgb(240,202,182);
+    border-radius: 3px;
+    width: 81px;
+}
+.btn1:hover{
+    background-color: rgb(255,217,188);
+}
+.btn2{
+    background-color: rgb(255,68,0);
+    color: white;
+    border-width: 0px;
+    /*border:1px solid  rgb(240,202,182);*/
+    border-radius: 3px;
+    width: 81px;
+}
+.btn2:hover{
+    background-color: rgb(242,45,0);
+}
+/*111111111111*/

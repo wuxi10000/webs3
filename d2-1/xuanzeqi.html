@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*标签选择器*/
+        span{
+            color: cadetblue;
+        }
+        /*id选择器*/
+        #d1{
+            background-color: yellowgreen;
+            height: 20px;
+            width: 20px;
+            border: 1px solid black;
+        }
+        /*class选择器*/
+        .dc1{
+            background-color: deepskyblue;
+            height: 20px;
+            width: 20px;
+            border: 1px solid black;
+        }
+        /*element,element*/
+        .c1,.c2,#d2,i{
+            color: deepskyblue;
+            font-size: 18px;
+        }
+
+        /*element element*/
+        #d3 a{
+            color: brown;
+        }
+
+        #d3 #d4 a{
+            color: yellowgreen;
+        }
+
+        #d3 #d5 .ca1{
+            color: silver;
+        }
+        /*element>element*/
+        ul>li{
+            color: purple;
+        }
+        #ul1>.cli1{
+            color: cyan;
+        }
+        .cul1>.cli2{
+            color: blanchedalmond;
+        }
+        /*element+element*/
+        span+a{
+            color: darkorchid;
+        }
+        /*element1~element2*/
+#s1~a{
+    color:palegreen;
+}
+    </style>
+</head>
+<body>
+
+<span>我是span标签呢</span>
+<div id="d1"></div>
+<div class="dc1"></div>
+
+<!--element,element-->
+<div class="c1">element,element</div>
+<div class="c2">element,element</div>
+<div id="d2">element,element</div>
+<i>element,element</i>
+
+<!--/*element element*/-->
+<div id="d3">
+    <div id="d4">
+        <a href="#">element element</a>
+    </div>
+    <div id="d5">
+        <a href="#" class="ca1">element element</a>
+    </div>
+    <a href="#" >element element</a>
+</div>
+<!--/*element>element*/-->
+<ul id="ul1" class="cul1">
+    <li id="li1" class="cli1">element>element</li>
+    <li id="li2" class="cli2">element>element</li>
+    <li id="li3" class="cli3">element>element</li>
+</ul>
+
+<!--/*element+element*/-->
+<span>
+    span1 element+element
+    <a>a1111111element+element</a>
+</span>
+<a>a22222element+element</a>
+<a>a3333element+element</a>
+
+<br>
+<!--/*element1~element2*/-->
+
+<s id="s1">
+    s1 element1~element2
+</s>
+<a>a44444element1~element2</a>
+<a>a55555element1~element2</a>
+</body>
+
+</html>

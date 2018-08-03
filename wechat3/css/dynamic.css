@@ -1,0 +1,404 @@
+#dynamic{
+    width: 100%;
+    /*height: 250px;*/
+    flex-grow: 1;
+    flex-basis: 0px;
+    /*定义项目的放大比例
+    即占用剩余空间的比例
+    singal，menu，title dynamic 四个元素中，
+    只有dynamic元素设置了flex-grow为1，所以其会占用所有剩余空间*/
+
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+#dynamic-search-area{
+    height: 40px;
+    width: 100%;
+    /*background-color: gainsboro;*/
+    background-color: rgb(243,243,245);
+}
+/*搜索栏*/
+#dynamic-search{
+    height: 30px;
+    width: 96%;
+    background-color: white;
+    border-radius: 4px;
+    /*box-shadow: 0px 0px 2px gray;*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dynamic-search-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dynamic-search-left{
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+#dynamic-search-right{
+    flex-grow: 1;
+    flex-basis: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*搜索图标*/
+#dynamic-search-icon{
+    background-image: url("../icon/search-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px
+}
+/*搜索文字*/
+#dynamic-search-text{
+    color: #8a8a8a;
+    font-size: 16px;
+}
+/*搜索文字左边的图片*/
+#dynamic-search-audio-icon{
+    background-image: url("../icon/search-audio-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px
+}
+
+/*聊天记录列表*/
+#dynamic-chat-list{
+    background-color: rgb(255,255,255);
+}
+#dynamic-chat-list>div{
+    width: 100%;
+    height: 62px;
+    border-bottom: 1px solid rgb(221,221,223);
+}
+/*置顶色*/
+.top_talk_bg_color{
+    background-color: rgb(245,245,245);
+}
+
+
+
+/*一条聊天记录*/
+
+.dynamic-chat-item{
+    width: 96%;
+    height: 100%;
+    /*background-color: #8a8a8a;*/
+    margin: 0px auto;
+    /*border: 1px solid rosybrown;*/
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*聊天记录左边*/
+.dynamic-chat-item-left{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*聊天记录右边*/
+.dynamic-chat-item-right{
+    margin-left: 5px;
+    height: 50px;
+    flex: 1;
+}
+/*头像通用*/
+.dynamic-chat-item-headpic{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    position: relative;
+}
+/*群头像div*/
+.dynamic-chat-item-group-headpic{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap-reverse;
+    /*align-content:flex-end;*/
+    align-items: flex-end;
+}
+.group-headpic{
+    width: 11px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1px 1px;
+}
+
+/*群头像*/
+.groupheadpic1{
+    background-image: url("../pic/headpic/q1.jpg");
+}
+.groupheadpic2{
+    background-image: url("../pic/headpic/q2.jpg");
+}
+.groupheadpic3{
+    background-image: url("../pic/headpic/q3.jpg");
+}
+.groupheadpic4{
+    background-image: url("../pic/headpic/q4.jpg");
+}
+.groupheadpic5{
+    background-image: url("../pic/headpic/q5.jpg");
+}
+.groupheadpic6{
+    background-image: url("../pic/headpic/q6.jpg");
+}
+.groupheadpic7{
+    background-image: url("../pic/headpic/q7.jpg");
+}
+.groupheadpic8{
+    background-image: url("../pic/headpic/q8.jpg");
+}
+.groupheadpic9{
+    background-image: url("../pic/headpic/q9.jpg");
+}
+.groupheadpic10{
+    background-image: url("../pic/headpic/q10.jpg");
+}
+.groupheadpic11{
+    background-image: url("../pic/headpic/q11.jpg");
+}
+.groupheadpic12{
+    background-image: url("../pic/headpic/q12.jpg");
+}
+.groupheadpic13{
+    background-image: url("../pic/headpic/q13.jpg");
+}
+.groupheadpic14{
+    background-image: url("../pic/headpic/q14.png");
+}
+
+
+
+
+.dynamic-headpic1{
+    background-image: url("../pic/headpic/天津公安民生服务平台.jpg");
+}
+.dynamic-headpic2{
+    background-image: url("../pic/headpic/葛勇.jpg");
+}
+.dynamic-headpic3{
+    background-image: url("../pic/headpic/黄羽飞.jpg");
+}
+.dynamic-headpic4{
+    background-image: url("../pic/headpic/京东.jpg");
+}
+.dynamic-headpic5{
+    background-image: url("../pic/headpic/秦立发.jpg");
+
+}
+
+.dynamic-headpic6{
+    background-image: url("../pic/headpic/纪超.jpg");
+}
+
+.dynamic-headpic7{
+    background-image: url("../pic/headpic/马乐乐.jpg");
+}
+/*聊天右侧上半部*/
+.dynamic-chat-item-right-top{
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*联系人名称*/
+.dynamic-chat-item-right-top>div:nth-child(1){
+    flex-grow: 1;
+    width: 200px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+
+}
+/*上次聊天时间*/
+.dynamic-chat-item-right-top>div:nth-child(2){
+    height: 30px;
+    width: 80px;
+    font-size: 12px;
+    color: gray;
+    text-align: right;
+}
+/*聊天右侧下半部*/
+.dynamic-chat-item-right-bottom{
+    height: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+/*最近聊天内容概要*/
+.dynamic-chat-item-right-bottom-content{
+    flex-grow: 1;
+    width: 285px;
+    font-size: 14px;
+    height: 20px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    text-align: left;
+    text-wrap:none;
+    color: #8a8a8a;
+}
+
+/*.dynamic-chat-item-right-bottom>div:nth-child(1){*/
+
+/*}*/
+
+/*是否免打扰*/
+.dynamic-chat-item-right-bottom>div:nth-child(2){
+    height: 20px;
+    width: 20px;
+    /*border: 1px solid yellow;*/
+}
+
+.interruption_div{
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+.is_no-interruptions{
+    background-image: url("../icon/no-interruptions-icon.svg");
+}
+
+
+/*公众号名称字体*/
+.font-gongzhognhao{
+    font-size: 18px;
+    /*color: rgb(104,174,166);*/
+    /*color: rgb(0,195,175);*/
+    color: #607fa6;
+}
+/*普通联系人名称字体*/
+.font-person{
+    font-size: 18px;
+    color:#313131;
+}
+
+
+.red_point{
+    height: 14px;
+    min-width: 14px;
+
+    position: absolute;
+    right: 0px;
+    top: -7px;
+
+    /*字体*/
+    color: white;
+    font-size: 0.1px;
+    font-family: Tahoma;
+    /*为了圆*/
+    border-radius: 7px;
+    /*背景红*/
+    background-color: crimson;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*vertical-align: center;*/
+}
+
+.unread_voice_color{
+    color: red;
+}
+/*//-------------我-----------------------------------*/
+#dynamic4{
+    display: none;
+    width: 100%;
+    /*height: 250px;*/
+    flex-grow: 1;
+    flex-basis: 0px;
+    /*定义项目的放大比例
+    即占用剩余空间的比例
+    singal，menu，title dynamic 四个元素中，
+    只有dynamic元素设置了flex-grow为1，所以其会占用所有剩余空间*/
+    background-color: rgb(243,243,245);
+    overflow: scroll;
+    flex-flow: column;
+}
+/*用户信息div*/
+#dynamic4-userinfo{
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+    margin-top: 15px;
+    /*margin-top: ;*/
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,255,255);
+}
+/*用户信息左边的*/
+#dynamic4-userinfo-left{
+    margin: 4px 0px 4px 10px;
+    display: flex;
+    /*justify-content: space-around;*/
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+/*用户信息右边的*/
+#dynamic4-userinfo-right{
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*头像pic容器*/
+#dynamic4-userinfo-box-headpic{
+    margin-right: 4px;
+}
+/*头像picdiv*/
+#dynamic4-userinfo-headpic{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../pic/headpic/myheadpic.png");
+}
+
+/*名称容器（上下）*/
+#dynamic4-userinfo-box-id{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+/*昵称*/
+#dynamic4-userinfo-box-id>div:nth-child(1){
+    font-size: 16px;
+    color: #313131;
+}
+/*微信号*/
+#dynamic4-userinfo-box-id>div:nth-child(2){
+    font-size: 10px;
+    color: #313131;
+}
+
+/*二维码*/
+#dynamic4-userinfo-right>div:nth-child(1){
+background-image: url("../icon/qrcode-icon.svg");
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+/*右箭头*/
+#dynamic4-userinfo-right>div:nth-child(2){
+font-size:16px ;
+    color: rgb(204,204,204);
+}

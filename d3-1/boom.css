@@ -1,0 +1,171 @@
+
+.begin{
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+}
+/*左边的车向右走*/
+.begin:hover +.c_div_car1{
+    animation-name: left_go_right;
+    animation-duration:5s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+/*右边的车向左走*/
+.begin:hover +.c_div_car1 +.c_div_car2{
+    animation-name: right_go_left;
+    animation-duration:5s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+/*左边的轮子转动*/
+.begin:hover +.c_div_car1 .tire1{
+      animation-name: round_left;
+      animation-duration:2s;
+      animation-timing-function:linear;
+      animation-iteration-count:infinite;
+}
+/*右边的轮子转动*/
+.begin:hover +.c_div_car1 +.c_div_car2 .tire2{
+    animation-name: round_right;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+/*左边的车向右走*/
+@keyframes left_go_right
+{
+    3%   { left: 12px;}
+    6%   { left: 23px;}
+    12%   { left: 45px;}
+    25%   { left: 90px;}
+    50%   { left: 180px;}
+    100%   { left: 361px;}
+}
+
+/*右边的车向左走*/
+@keyframes right_go_left
+{
+    100%   {left:479px;}
+}
+
+
+/*顺时针*/
+@keyframes round_left
+{
+    0%   {}
+    25%   {transform: rotate(90deg);}
+    50%   {transform: rotate(180deg);}
+    75%   {transform: rotate(270deg);}
+    100%   {transform: rotate(360deg);}
+}
+/*逆时针*/
+@keyframes round_right
+{
+    0%   {}
+    25%   {transform: rotate(-90deg);}
+    50%   {transform: rotate(-180deg);}
+    75%   {transform: rotate(-270deg);}
+    100%   {transform: rotate(-360deg);}
+}
+
+/*左边的车块*/
+.c_div_car1{
+    width: 120px;
+    height: 60px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 200px;
+}
+/*右边的车块*/
+.c_div_car2{
+    width: 120px;
+    height: 60px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+
+/*车块中的黑色大块*/
+.bigblack{
+    width: 120px;
+    height: 45px;
+    position: absolute;
+    background-color: black;
+    z-index: 15;
+}
+/*左上角大白块*/
+.leftwhite{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    z-index: 30;
+}
+/*右上角大白块*/
+.rightwhite{
+    position: absolute;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    z-index: 30;
+}
+/*左边车的轮子*/
+.tire1{
+    width: 15px;
+    height: 15px;
+    background-image: url("车轮1.svg");
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 10;
+}
+.tireleft1{
+    position: absolute;
+    left: 30px;
+    top:40px;
+}
+.tireleft2{
+    position: absolute;
+    left: 80px;
+    top:40px;
+}
+
+/*右边车的轮子*/
+
+.tire2{
+    width: 15px;
+    height: 15px;
+    background-image: url("车轮2.svg");
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.tireright1{
+    position: absolute;
+    left: 30px;
+    top:40px;
+}
+.tireright2{
+    position: absolute;
+    left: 80px;
+    top:40px;
+}
+
+
+.powpic{
+    background-image: url("pow.jpg");
+    position: absolute;
+    left: 360px;
+    top:200px;
+    background-size: cover;
+    width: 16px;
+    height: 9px;
+}

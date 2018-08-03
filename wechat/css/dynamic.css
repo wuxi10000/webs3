@@ -1,0 +1,11 @@
+#dynamic{
+    width: 100%;
+    /*height: 250px;*/
+    flex-grow: 1;
+    /*定义项目的放大比例
+    即占用剩余空间的比例
+    singal，menu，title dynamic 四个元素中，
+    只有dynamic元素设置了flex-grow为1，所以其会占用所有剩余空间*/
+
+    background-color: cornflowerblue;
+}

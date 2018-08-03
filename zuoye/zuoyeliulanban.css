@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+
+/*大容器*/
+.container{
+    width: 100%;
+    min-height: 300px;
+}
+
+/*顶部占位60px*/
+.d_d_top{
+    height: 30px;
+}
+
+/*聊天窗口范围*/
+.c_div_talk{
+    min-height: 300px;
+    max-height: 600px;
+    border: 1px solid gainsboro;
+    margin-left: 250px;
+    margin-right: 250px;
+    overflow-y: scroll;
+}
+
+/*#去除滚动条用*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 1px;
+}
+
+/*一条聊天记录*/
+.c_d_one_talk{
+    clear: both;
+    padding:20px;
+}
+
+/*头像外框 div*/
+.c_d_head{
+    height: 50px;
+    width: 50px;
+    padding:0px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/*头像图像 div*/
+.c_d_pic_head{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/*设置大家的头像*/
+
+.c_d_headpic1{
+    background-image: url("lss.jpg");
+}
+.c_d_headpic2{
+    background-image: url("jm.jpg");
+}
+.c_d_headpic3{
+    background-image: url("geyong.jpg");
+}
+.c_d_headpic4{
+    background-image: url("wuxi.png");
+}
+.c_d_headpic5{
+    background-image: url("hyf.jpg");
+}
+
+
+/*名称和内容的框*/
+.c_d_name_content{
+    display: inline-block;
+    width: 500px;
+}
+
+/*箭头和内容的框*/
+.c_d_arrow_content{
+    display: inline-block;
+    clean: both;
+}
+
+/*左箭头*/
+.left_arrow{
+    display: inline-block;
+    float: left;
+    height:0px;
+    width:0px;
+    border-right:  7px solid   #EAEAEA ;
+    border-bottom:  7px solid transparent;
+    border-top:   7px   solid  transparent;
+    margin-top: 10px;
+}
+/*右箭头*/
+.right_arrow{
+    display: inline-block;
+    float: right;
+    height:0px;
+    width:0px;
+    border-left:  7px solid   #EAEAEA ;
+    border-bottom:  7px solid transparent;
+    border-top:   7px   solid  transparent;
+    margin-top: 10px;
+}
+/*聊天内容的框框*/
+.c_d_content{
+    max-width: 450px;
+    display: inline-block;
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*昵称左边和右边不一样*/
+.nicknamespan_left{
+    margin-left: 12px;
+    font-size: 12px;
+}
+.nicknamespan_right{
+    float: right;
+    text-align: right;
+    margin-right: 12px;
+    font-size: 12px;
+}
+
+/*昵称所属的div*/
+.nicknamediv{
+    width: 100%;
+}
+
+
+/*发的图片*/
+.talkcpic1{
+    background-image: url("jmc.png");
+    background-size: cover;
+    /*图片长宽应该为动态*/
+    max-width: 450px;
+    max-height: 450px;
+    width: 138px;
+    height:220px;
+}

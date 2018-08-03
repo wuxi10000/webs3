@@ -1,0 +1,10 @@
+#container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+
+    display: flex;
+    flex-direction :column;/*主轴的方向,纵向排列*/
+    justify-content:space-between;/*项目在主轴上的对齐方式,两端对齐，项目之间的间隔都相等。*/
+}

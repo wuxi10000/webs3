@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .c_d_out{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            /*border: 1px lightgray solid;*/
+            padding: 1px;
+            overflow: hidden;
+        }
+        .c_d_pic{
+            width: 300px;
+            height: 300px;
+            background-image: url("http://imgsrc.baidu.com/forum/pic/item/0b46f21fbe096b63c7397ec70c338744ebf8ac00.jpg");
+            transition-property:all; /*过渡属性*/
+            transition-duration: 1s; /*过渡时长*/
+            transition-delay:0.1s; /*延迟多久开始动作*/
+            transition-timing-function: ease;/*时间曲线*/
+        }
+        .c_d_pic:hover{
+            /*放大一点*/
+            transform: scale(1.1);
+        }
+
+        .c_d_out:hover .c_d_circle{
+            visibility: visible;
+        }
+        .c_d_circle{
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 150px;
+            left: 125px;
+            visibility: hidden;
+            transition-property:width; /*过渡属性*/
+            transition-duration: 1s; /*过渡时长*/
+            transition-delay:0.3s; /*延迟多久开始动作*/
+            transition-timing-function: ease-in-out;/*时间曲线*/
+        }
+        .c_d_triangle{
+            height: 0px;
+            width: 0px;
+            border-top: 10px solid  transparent;
+            border-bottom: 10px solid  transparent;
+            border-left: 17px solid darkgray;
+            /*border-right: 35px solid blue;*/
+            position: absolute;
+            top: 14px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="c_d_out">
+    <div class="c_d_pic">
+    </div>
+
+    <div class="c_d_circle" id="i_d_circle">
+        <div class="c_d_triangle">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
