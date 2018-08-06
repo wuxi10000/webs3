@@ -264,7 +264,9 @@ background-image: url("../icon/scan-blue-icon.svg");
 /*朋友名称*/
 .dynamic3-cicle-friend-name{
 
-    color: rgb(112,113,143);
+    /*color: rgb(112,113,143);*/
+
+    color: rgb(87,107,149)
 }
 /*文字内容*/
 .dynamic3-text-div{
@@ -287,7 +289,8 @@ background-image: url("../icon/scan-blue-icon.svg");
 }
 .dynamic3-text-full-box-button{
     /*color: rgb(112,113,143);*/
-    color: rgb(112,113,143);
+    /*color: rgb(87,107,149);*/
+    color: rgb(98,117,156);
     font-weight: 100;
     font-size: 8px;
 }
@@ -315,8 +318,9 @@ background-image: url("../icon/scan-blue-icon.svg");
 /*那里发的*/
 .dynamic3-location{
     /*height: 16px;*/
-    /*color: rgb(112,113,143);*/
-    color: steelblue;
+    color: rgb(122,138,171);
+    /*color: steelblue;*/
+
     font-weight: 100;
     font-size: 8px;
     /*transform: scale(0.8);*/
@@ -383,7 +387,9 @@ border-radius: 2px;
 
 /*名称颜色*/
 .dynamic3-discuss-box-zan>div:nth-child(2n){
-    color: rgb(112,113,143);
+    /*color: rgb(112,113,143);*/
+    color: rgb(87,107,149);
+
     /*color: red;*/
 }
 /*逗号黑色*/
@@ -411,7 +417,8 @@ border-radius: 2px;
     font-size: 10px;
 }
 .dynamic3-discuss-box-msg>div>span:nth-child(2n-1){
-    color: rgb(112,113,143)
+    /*color: rgb(112,113,143)*/
+    color:rgb(87,107,149)
 }
 
 /*.dynamic3-discuss-box-msg>div>div:nth-child(2n-1){*/
