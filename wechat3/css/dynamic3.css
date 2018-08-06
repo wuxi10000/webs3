@@ -291,7 +291,7 @@ background-image: url("../icon/scan-blue-icon.svg");
     /*color: rgb(112,113,143);*/
     /*color: rgb(87,107,149);*/
     color: rgb(98,117,156);
-    font-weight: 100;
+    /*font-weight: 100;*/
     font-size: 8px;
 }
 
@@ -321,7 +321,7 @@ background-image: url("../icon/scan-blue-icon.svg");
     color: rgb(122,138,171);
     /*color: steelblue;*/
 
-    font-weight: 100;
+    /*font-weight: 100;*/
     font-size: 8px;
     /*transform: scale(0.8);*/
     margin-left: 0px;
