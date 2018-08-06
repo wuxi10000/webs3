@@ -59,7 +59,7 @@
     width: 40px;
     flex-grow: 1;
     flex-basis: 0px;
-    font-weight: 100;
+    /*font-weight: 100;*/
     white-space: nowrap;
 }
 
