@@ -286,7 +286,8 @@ background-image: url("../icon/scan-blue-icon.svg");
 
 }
 .dynamic3-text-full-box-button{
-    color: rgb(112,113,143);
+    /*color: rgb(112,113,143);*/
+    color:grey;
     font-weight: 100;
     font-size: 8px;
 }
@@ -328,7 +329,8 @@ background-image: url("../icon/scan-blue-icon.svg");
 }
 /*发表时间*/
 .dynamic3-public-time{
-    color: rgb(204,204,204);
+    /*color: rgb(204,204,204);*/
+    color:grey;
     font-size: 8px;
     width:100px;
     flex: 1;
