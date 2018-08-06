@@ -116,7 +116,7 @@ $(function(){
 
     //打开页面直接点击我
     // alert($("#namebook-icon"))
-    $("#discovery-icon").click();
+    $("#message-icon").click();
 
     //-----------------end
     }
