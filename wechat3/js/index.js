@@ -35,7 +35,7 @@ $(function(){
             $("#message-text").css({"color":"rgb(82,169,54)"})
         }else{
             $("#message-icon").css({"background-image":"url(../icon/message-icon.svg)"})
-            $("#message-text").css({"color":"#bebebe"})
+            $("#message-text").css({"color":"grey"})
         }
     }
     function setpage2(pagestat){
@@ -44,7 +44,7 @@ $(function(){
             $("#namebook-text").css({"color":"rgb(82,169,54)"})
         }else{
             $("#namebook-icon").css({"background-image":"url(../icon/namebook-icon.svg)"})
-            $("#namebook-text").css({"color":"#bebebe"})
+            $("#namebook-text").css({"color":"grey"})
         }
     }
 
@@ -54,7 +54,7 @@ $(function(){
             $("#discovery-text").css({"color":"rgb(82,169,54)"})
         }else{
             $("#discovery-icon").css({"background-image":"url(../icon/discovery-icon.svg)"})
-            $("#discovery-text").css({"color":"#bebebe"})
+            $("#discovery-text").css({"color":"grey"})
         }
     }
 
@@ -64,7 +64,7 @@ $(function(){
             $("#me-text").css({"color":"rgb(82,169,54)"})
         }else{
             $("#me-icon").css({"background-image":"url(../icon/me-icon.svg)"})
-            $("#me-text").css({"color":"#bebebe"})
+            $("#me-text").css({"color":"grey"})
         }
     }
 
