@@ -1,5 +1,5 @@
 $(function(){
-    setTimeout("", 2000);
+    // setTimeout("", 2000);
 
     // $("#dynamic").load("dynamic2.html")
     // $("#title").load("title2.html")
