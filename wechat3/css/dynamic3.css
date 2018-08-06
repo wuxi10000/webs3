@@ -183,7 +183,7 @@ background-image: url("../icon/scan-blue-icon.svg");
 
 /*背景图*/
 #dynamic3-cicle-box-cover{
-    background-color: red;
+    /*background-color: red;*/
     width: 100%;
     height: 200px;
     display: flex;
