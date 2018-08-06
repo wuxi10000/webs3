@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: orange;
+    /*background-color: orange;*/
 
     display: flex;
     flex-direction :column;/*主轴的方向,纵向排列*/

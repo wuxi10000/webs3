@@ -1,0 +1,423 @@
+::-webkit-scrollbar-button {
+    display:none;
+}
+
+
+
+#dynamic{
+    width: 100%;
+    /*height: 250px;*/
+    flex-grow: 1;
+    flex-basis: 0px;
+    /*定义项目的放大比例
+    即占用剩余空间的比例
+    singal，menu，title dynamic 四个元素中，
+    只有dynamic元素设置了flex-grow为1，所以其会占用所有剩余空间*/
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+
+
+.dynamic3-item{
+    height: 40px    ;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,255,255);
+}
+#friendcircle-newmsg{
+    margin-left: 15px;
+    font-size: 1px ;
+    height: 18px;
+    width: 18px;
+    color: white;
+    font-family: Tahoma;
+    border-radius:50%;
+    background-color: crimson;
+}
+
+.dynamic3-margin-top{
+    margin-top:15px;
+}
+
+/*左侧*/
+.dynamic3-left{
+    margin-left: 10px;
+    display: flex;
+
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+
+/*图标box*/
+.dynamic3-left-box-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/*图标*/
+.dynamic3-left-icon{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-size: cover;*/
+}
+
+.dynamic3-left-icon-scan{
+background-image: url("../icon/scan-blue-icon.svg");
+}
+.dynamic3-left-icon-shake{
+    background-image: url("../icon/shake-icon-blue.svg");
+}
+.dynamic3-left-icon-havealook{
+    background-image: url("../icon/havealook-icon.svg");
+}
+.dynamic3-left-icon-haveasearch{
+    background-image: url("../icon/haveasearch-icon.svg");
+}
+.dynamic3-left-icon-tinyprogram {
+    background-image: url("../icon/tinyprogram-icon.svg");
+}
+.dynamic3-left-icon-friendcircle{
+    background-image: url("../icon/friendcircle-icon.svg");
+
+}
+
+
+
+.dynamic3-border-bottom {
+    border-bottom: 1px solid lightgray;
+
+}
+
+/*功能名称*/
+.dynamic3-left-name{
+    font-size: 16px;
+    color: #313131;
+}
+
+/*右侧*/
+.dynamic3-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+#new-moment-friend-head-pic{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../pic/headpic/葛勇.jpg");
+}
+
+/*右箭头*/
+.dynamic3-right>div:nth-child(1){
+    font-size:16px ;
+    color: rgb(204,204,204);
+    /*color: yellow;*/
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+}
+/*右箭头*/
+.dynamic3-right>div:nth-child(2){
+    font-size:16px ;
+    color: rgb(204,204,204);
+    /*color: yellow;*/
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+}
+
+
+.dynamic3-red_point{
+    height: 5px;
+    min-width: 5px;
+
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    border-radius: 50%;
+    /*字体*/
+    /*color: white;*/
+    /*font-size: 0.1px;*/
+    /*font-family: Tahoma;*/
+    /*!*为了圆*!*/
+
+    /*!*背景红*!*/
+    background-color: crimson;
+
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*vertical-align: center;*/
+}
+
+
+#dynamic3-firend-cicle-box{
+    display:block;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255,255,255);
+
+    top: 82px;
+    bottom: 0px;
+    left: 100%;
+    /*right: -1px;*/
+    overflow: scroll;
+    z-index: 10;
+
+    /*transition-property:width;*/
+
+    transition-property: left;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out	;
+    /*transition-delay: 0.2s;*/
+}
+
+
+/*背景图*/
+#dynamic3-cicle-box-cover{
+    background-color: red;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dynamic3-cicle-cover {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-image: url("../pic/wechatbeijing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position:center bottom;
+}
+/*个人信息*/
+#dynamic3-cicle-box-myinfo{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    position: relative;
+    bottom: 27px;
+}
+
+
+
+#dynamic3-cicle-box-myinfo>div:nth-child(1){
+    color: white;
+    margin-right: 5px;
+    font-size: 16px;
+    text-align: right;
+}
+#dynamic3-cicle-box-myinfo>div:nth-child(2){
+    height: 42px;
+    width : 42px;
+    background-image: url(../pic/headpic/myheadpic.png);
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    border: 1px solid rgb(200,200,200);
+    background-position: center center;
+    margin-right: 4px;
+}
+
+/*大家发的朋友圈*/
+.dynamic3-cicle-box-friendmsg{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+}
+
+.dynamic3-cicle-friendmsg-left{
+    margin-left: 4px;
+    margin-right: 4px;
+    /*border: 1px solid red;*/
+    width: 40px;
+}
+
+.dynamic3-cicle-friendmsg-right{
+    /*border: 1px solid red;*/
+    flex: 1;
+    width: 100px;
+    margin-right: 4px;
+}
+
+/*头像*/
+.dynamic3-cicle-friendmsg-left>div{
+    background-image: url("../pic/headpic/百世快递1萝卜.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37px;
+    height: 37px;
+    border-radius: 1px;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+/*朋友名称*/
+.dynamic3-cicle-friend-name{
+
+    color: rgb(112,113,143);
+}
+/*文字内容*/
+.dynamic3-text-div{
+
+    height: auto;
+    font-size: 10px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /*white-space:nowrap;*/
+    -webkit-line-clamp: 6;
+    /*-webkit-line-clamp: auto;*/
+    -webkit-box-orient: vertical;
+
+}
+/*全文 按钮*/
+.dynamic3-text-full-button{
+
+}
+.dynamic3-text-full-box-button{
+    color: rgb(112,113,143);
+    font-weight: 100;
+    font-size: 8px;
+}
+
+/*照片们子*/
+.dynamic3-pics-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  flex-start;
+    /*margin-left: 2%;*/
+ align-items: flex-start;
+    margin-right: 10%;
+
+}
+
+.dynamic3-pics-box>div{
+    width: 30%;
+    height: 0%;
+    /*height: 32%;*/
+    padding-bottom: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1.6% 1.6%;
+}
+/*那里发的*/
+.dynamic3-location{
+    /*height: 16px;*/
+    /*color: rgb(112,113,143);*/
+    color: steelblue;
+    font-weight: 100;
+    font-size: 8px;
+    /*transform: scale(0.8);*/
+    margin-left: 0px;
+}
+.dynamic3-public-time-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*发表时间*/
+.dynamic3-public-time{
+    color: rgb(204,204,204);
+    font-size: 8px;
+    width:100px;
+    flex: 1;
+}
+/*评论点赞按钮*/
+.dynamic3-discuss-button{
+    background-image: url("../icon/评论点赞-icon.svg");
+    width:22px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*小三角*/
+
+.dynamic3-discuss-box-triangle{
+    width: 100%;
+    height: 10px;
+
+    /*为了让三角在右下角*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.dynamic3-discuss-triangle{
+    /*height: 5px;*/
+    margin-left: 5px;
+    border-right:   6px solid   transparent;
+    border-bottom:  8px solid  rgb(230,230,230);
+    border-left:    6px   solid  transparent ;
+
+}
+/*赞*/
+.dynamic3-discuss-box-zan{
+    background-color: rgb(230,230,230);
+    border-bottom: whitesmoke 1px solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+border-radius: 2px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+/*名称颜色*/
+.dynamic3-discuss-box-zan>div{
+    margin:0px 1px ;
+    max-height: 16px;
+    /*color: red;*/
+}
+
+/*名称颜色*/
+.dynamic3-discuss-box-zan>div:nth-child(2n){
+    color: rgb(112,113,143);
+    /*color: red;*/
+}
+/*逗号黑色*/
+.dynamic3-discuss-box-zan>div:nth-child(2n-1){
+    color: #313131;
+}
+/*评论*/
+.dynamic3-discuss-box-msg{
+    background-color: rgb(230,230,230);
+    border-radius: 2px;
+}
+/*小桃心*/
+.dynamic3-zan-icon{
+    width:15px;
+    height: 15px;
+    background-image: url("../icon/赞.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 2px;
+}
+
+.dynamic3-discuss-box-msg{
+    display: flex;
+    flex-flow: column;
+    font-size: 10px;
+}
+.dynamic3-discuss-box-msg>div>span:nth-child(2n-1){
+    color: rgb(112,113,143)
+}
+
+/*.dynamic3-discuss-box-msg>div>div:nth-child(2n-1){*/
+    /*color: rgb(112,113,143);*/
+    /*white-space: nowrap;*/
+/*}*/
+/*.dynamic3-discuss-box-msg>div>div:nth-child(2n){*/
+    /*color: #313131;*/
+/*}*/
+
+

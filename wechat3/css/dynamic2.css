@@ -1,0 +1,206 @@
+#dynamic{
+    width: 100%;
+    /*height: 250px;*/
+    flex-grow: 1;
+    flex-basis: 0px;
+    /*定义项目的放大比例
+    即占用剩余空间的比例
+    singal，menu，title dynamic 四个元素中，
+    只有dynamic元素设置了flex-grow为1，所以其会占用所有剩余空间*/
+    overflow: scroll;
+
+}
+#dynamicinner{
+    width: 100%;
+    heigth:255px;
+    background-color: whitesmoke;
+
+}
+#dynamic-search-area{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(243,243,245);
+}
+
+/*搜索栏*/
+#dynamic-search{
+    height: 30px;
+    width: 96%;
+    background-color: white;
+    border-radius: 4px;
+    /*box-shadow: 0px 0px 2px gray;*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dynamic-search-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dynamic-search-left{
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+#dynamic-search-right{
+    flex-grow: 1;
+    flex-basis: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*搜索图标*/
+#dynamic-search-icon{
+    background-image: url("../icon/search-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px
+}
+/*搜索文字*/
+#dynamic-search-text{
+    color: #8a8a8a;
+    font-size: 16px;
+}
+/*搜索文字左边的图片*/
+#dynamic-search-audio-icon{
+    background-image: url("../icon/search-audio-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px
+}
+
+#friend-short-list{
+    width: 16px;
+    position: absolute;
+    right: 8px;
+    top:180px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*右侧固定的栏位*/
+#friend-short-list>div{
+    width: 12px;
+    height: 12px;
+    /*border: 1px red solid;*/
+    color: #8a8a8a;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+     margin-bottom: 4px;
+    font-size: 12px;
+}
+
+
+#friend-short-list>div:nth-child(1){
+    background-image: url("../icon/search-icon.svg");
+
+}
+#friend-short-list>div:nth-child(2){
+    background-image: url("../icon/star-friend-icon.svg");
+}
+
+
+/*--------------------*/
+
+
+.dynamic2-item{
+    height: 40px    ;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,255,255);
+}
+
+.dynamic2-margin-top{
+    margin-top:15px;
+}
+
+/*左侧*/
+.dynamic2-left{
+    margin-left: 10px;
+    display: flex;
+
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+
+
+.dynamic2-border-bottom {
+    border-bottom: 1px solid lightgray;
+
+}
+/*图标box*/
+.dynamic2-left-box-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/*图标*/
+.dynamic2-left-icon{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-size: cover;*/
+}
+/*图标*/
+.dynamic2-left-icon{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2px;
+    /*background-size: cover;*/
+}
+
+
+.dynamic2-left-icon-new-friend{
+    background-image: url("../icon/new-friend.svg");
+}
+.dynamic2-left-icon-grouptalk{
+    background-image: url("../icon/grouptalk-icon.svg");
+}
+.dynamic2-left-icon-wetag{
+    background-image: url("../icon/wetag-icon.svg");
+}
+.dynamic2-left-icon-public-user{
+    background-image: url("../icon/public-user-icon.svg");
+}
+/*功能名称*/
+.dynamic2-left-name{
+    font-size: 16px;
+    color: #313131;
+}
+#start-friend-icon{
+    background-image: url("../icon/star-friend-icon.svg");
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 2px;
+}
+.friend-item{
+    width: 100%;
+    height: 25px;
+    background-color: rgb(243,243,245);
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+#frined-number{
+    border-top: 1px solid lightgray;
+    text-align: center;
+    background-color: white;
+    color: #8a8a8a;
+}

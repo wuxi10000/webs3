@@ -1,0 +1,142 @@
+#title{
+     width: 100%;
+     height: 50px;
+     background-color: #313131 ;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 18px;
+ }
+
+#title-left{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+#title-center{
+    height: 50px;
+    flex-grow: 1;
+}
+#title-right{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#title-right-plus{
+    height: 26px;
+    width: 26px;
+    background-image: url("../icon/title-right-plus-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+/*点击加号弹出来的菜单*/
+#title-right-menu{
+    /*height: 600px;*/
+    width: 120px;
+    position: absolute;
+    top:85px;
+    right:5px;
+    display: none;
+
+}
+
+
+
+/*小三角所属的那一行*/
+#title-right-menu-box-triangle{
+    width: 100%;
+    height: 10px;
+
+    /*为了让三角在右下角*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*小三角*/
+#title-right-menu-triangle{
+    /*height: 5px;*/
+    margin-right: 5px;
+    border-right:   6px solid   transparent;
+    border-bottom:  8px solid  rgb(73,73,75);
+    border-left:    6px   solid  transparent ;
+
+}
+
+
+#title-right-menu-window{
+    background-color: rgb(73,73,75);
+    height: 150px;
+
+    /*4个小菜单，纵向排列*/
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*每个小菜单的图片和文字排列方式*/
+#title-right-menu-window>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+/*小菜单一整行*/
+#title-right-menu-window>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*border: 1px solid yellow;*/
+    height: 30px;
+}
+#title-right-menu-window>div:nth-child(1){
+    border-bottom: 1px solid rgb(84,84,86);
+}
+#title-right-menu-window>div:nth-child(2){
+    border-bottom: 1px solid rgb(84,84,86);
+}
+#title-right-menu-window>div:nth-child(3){
+    border-bottom: 1px solid rgb(84,84,86);
+}
+
+
+/*4个菜单icon的样式*/
+#title-right-menu-window>div>div:nth-child(1){
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*4个菜单文字的样式*/
+#title-right-menu-window>div>div:nth-child(2){
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px  solid green;*/
+    color: whitesmoke;
+}
+
+/*发起群聊*/
+#group-chat-icon{
+    background-image: url("../icon/group-chat-icon.svg");
+}
+ #add-friend-icon{
+     background-image: url("../icon/add-friend-icon.svg");
+ }
+#title-scan-icon{
+    background-image: url("../icon/title-scan-icon.svg");
+}
+#title-payment-icon{
+    background-image: url("../icon/title-payment-icon.svg");
+}

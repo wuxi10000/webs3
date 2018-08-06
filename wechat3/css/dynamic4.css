@@ -1,0 +1,181 @@
+#dynamic{
+     width: 100%;
+     /*height: 250px;*/
+     flex-grow: 1;
+     flex-basis: 0px;
+     /*定义项目的放大比例
+     即占用剩余空间的比例
+     singal，menu，title dynamic 四个元素中，
+     只有dynamic元素设置了flex-grow为1，所以其会占用所有剩余空间*/
+     background-color: whitesmoke;
+     overflow: scroll;
+ }
+
+/*用户信息div*/
+#dynamic4-userinfo{
+    /*border-top:1px solid lightgray;*/
+    /*border-bottom:1px solid lightgray;*/
+    margin-top: 15px;
+    height: 60px;
+    /*margin-top: ;*/
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,255,255);
+}
+/*用户信息左边的*/
+#dynamic4-userinfo-left{
+    /*margin: 4px 0px 4px 10px;*/
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+/*用户信息右边的*/
+#dynamic4-userinfo-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*头像pic容器*/
+#dynamic4-userinfo-box-headpic{
+    margin-right: 10px;
+}
+/*头像picdiv*/
+#dynamic4-userinfo-headpic{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../pic/headpic/myheadpic.png");
+}
+
+/*名称容器（上下）*/
+#dynamic4-userinfo-box-id{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+/*昵称*/
+#dynamic4-userinfo-box-id>div:nth-child(1){
+    font-size: 16px;
+    color: #313131;
+}
+/*微信号*/
+#dynamic4-userinfo-box-id>div:nth-child(2){
+    font-size: 8px;
+    color: #313131;
+}
+
+/*二维码*/
+#dynamic4-userinfo-right>div:nth-child(1){
+    background-image: url("../icon/qrcode-icon.svg");
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+/*右箭头*/
+#dynamic4-userinfo-right>div:nth-child(2){
+    font-size:16px ;
+    color: rgb(204,204,204);
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+}
+
+
+.dynamic4-margin-top{
+    margin-top:15px;
+}
+.dynamic4-border-bottom{
+    border-bottom: 1px solid lightgray;
+}
+
+/*----------------------------*/
+.dynamic4-item{
+    /*border-top:1px solid lightgray;*/
+    /*border-bottom:1px solid lightgray;*/
+    /*margin-top: 15px;*/
+    height: 40px    ;
+    /*margin-top: ;*/
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,255,255);
+}
+
+/*左侧*/
+.dynamic4-left{
+    margin-left: 10px;
+    display: flex;
+
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+/*图标box*/
+.dynamic4-left-box-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+/*图标*/
+.dynamic4-left-icon{
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-size: cover;*/
+}
+.dynamic4-left-icon-wallet{
+    margin-top: 10px;
+    background-image: url("../icon/wallet-icon.svg");
+}
+.dynamic4-left-icon-collect{
+    margin-top: 4px;
+    background-image: url("../icon/collect-icon.svg");
+}
+.dynamic4-left-icon-picbook{
+    /*margin-top: 4px;*/
+    background-image: url("../icon/picbook-icon.svg");
+}
+.dynamic4-left-icon-cardbag{
+    margin-top: 4px;
+    background-image: url("../icon/cardbag-icon.svg");
+
+}
+.dynamic4-left-icon-face{
+    background-image: url("../icon/face-icon.svg");
+
+}
+.dynamic4-left-icon-setup{
+    background-image: url("../icon/setup-icon.svg");
+
+}
+/*功能名称*/
+.dynamic4-left-name{
+    font-size: 16px;
+    color: #313131;
+}
+
+/*右侧*/
+.dynamic4-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+/*右箭头*/
+.dynamic4-right>div:nth-child(1){
+    font-size:16px ;
+    color: rgb(204,204,204);
+    /*color: yellow;*/
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+}
